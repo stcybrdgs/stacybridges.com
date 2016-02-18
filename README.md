@@ -1,2 +1,2 @@
 #[stacybridges.com](http://stacybridges.com)
-My personal portfolio web site.
+This repo contains files for my personal portfolio web site. The site is implemented as a Single-Page Application using HTML5, CSS3, JS/jQuery, AngularJS, Bootstrap, and PHP. 
