@@ -1,0 +1,77 @@
+<!-- JSP FORM DEMO -->
+<div class="modal-content">
+
+  <!-- HEADER CONTENT-->  
+  <div class="modal-header text-center ">
+    <span class="x-dismiss" data-dismiss="modal">x</span>
+    <span class="title">JSP Form Demo</span> 
+  </div>
+
+  <!-- ABSTRACT CONTENT-->
+  <div class="panel-group text-center" id="accordion1">
+    <div class="panel panel-default" style="border-radius:0px;border-width:0px 0px 1px 0px;">
+      <div class="panel-heading" style="border-radius:0px;border-width:0px 0px 1px 0px;">
+        <div class="abstract-title">
+          <span class="abstract-link abstract-link-show" href="#p-abstract" data-toggle="collapse" data-parent="#accordion1"><i class="fa fa-chevron-down abstract-icon"></i>More</span>
+          <span class="abstract-link abstract-link-hide" href="#p-abstract" data-toggle="collapse" data-parent="#accordion1"><i class="fa fa-chevron-up abstract-icon"></i>Less</span>
+        </div>
+      </div>
+      <div id="p-abstract" class="collapse panel-collapse">
+        <div class="panel-body" style="margin:0px;">
+          <div class="abstract-text text-left">
+            Abstract stuff
+            <br/><br/>
+            <span class="abstract-link abstract-chevron" href="#p-abstract" data-toggle="collapse" data-parent="#accordion1">
+              <i class="fa fa-chevron-circle-up"></i>
+            </span>                
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CONTENT -->  
+  <div class="text-center text-muted">
+    <div class="modal-footer">
+      <div class="text-center modal-media-info">
+          <i class="fa fa-desktop modal-media-icon"></i>
+          <br/>
+          <em>for desktops</em>
+          <br/>
+      </div>
+      <div class="list-div">
+        <div class="text-center tech-tag-div">
+          <span class="tech-tag">JSP</span>
+          <span class="tech-tag">PaaS</span>  
+        </div>               
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-plus"></i> JSP form-processing demo</li>
+          <li><i class="fa-li fa fa-plus"></i> Platform as a Service (PaaS)</li>
+          <li><i class="fa-li fa fa-plus"></i> OpenShift Online (Red Hat)</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <a href="http://jspformproject-accjavabridges.rhcloud.com/about.html" target="_blank" class="btn btn-primary modal-link">
+          <i class="fa fa-external-link"></i>
+          &nbsp;&nbsp;                  
+          Visit website
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer-background"></div>
+</div>
+
+<script>
+  /*************************************************** 
+  * TOGGLE THE ABSTRACT TITLE/CHEVRON  
+  ***************************************************/
+  $(document).ready(function(){
+    $('.abstract-link-show').show();
+    $('.abstract-link-hide').hide();      
+    $('.abstract-link').click(function(){
+      $('.abstract-link-show').toggle();
+      $('.abstract-link-hide').toggle();
+    });
+  });
+</script>

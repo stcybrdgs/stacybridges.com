@@ -1,0 +1,645 @@
+<!doctype html>
+<html ng-app="myPortfolio">
+<head>
+
+  <!-- META DATA -->
+  <meta charset="utf-8">
+  <title>Stacy Bridges | Developer Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="c++, html, css, javascript, json, jquery, bootstrap, angular, technical, communication, web, developer, portfolio">
+  <meta name="description" content="I’m a technical communicator and developer who loves working with teams, technology, and the web. . . welcome to my online portfolio!">
+  <meta property="og:title" content="Stacy Bridges | Developer Portfolio" />
+  <meta property="og:description" content="I’m a technical communicator and developer who loves working with teams, technology, and the web. . . welcome to my online portfolio!" />
+  <meta property="og:image" content="http://www.stacybridges.com/img/stacy_bridges.jpg" />
+
+  <!-- LINKS -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,700italic|Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap-min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">  
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon"><!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!-- FAVICON -->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+<div class="wrap">
+  <div id="main-wrapper">
+
+
+<!-- MENU ///////////////////////////////////////-->   
+    <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header navbar-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="myBrand">
+              <a class="navbar-brand" href="#panel-anchor">
+                <div class="brand">s</div>
+                <span class="stacyBridges">&nbsp;Stacy Bridges</span>
+              </a>         
+            </div> 
+          </div>
+          <div class="collapse navbar-collapse navbar-right text-center" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#portfolio">Portfolio</a></li>              
+              <li><a href="#about">About</a></li>    
+              <li><a href="#skills">Skills</a></li>                  
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- SLIDE-DOWN WELCOME PANEL ////////////////-->
+    <div id="panel-anchor"></div><!-- a scroll target for brand href -->
+    <div class="spacer50"></div>
+
+    <div id="panel" class="container-fluid welcome-panel" >
+     <!-- WLECOME POP-OUT PANEL --> 
+      <div class="row welcome-content">
+
+        <!-- DISMISS BUTTON -->
+        <div class="col-md-12 text-right">
+          <i class="fa fa-times-circle welcome-dismiss"></i> 
+        </div>    
+              
+        <div class="container">
+          <!-- PHOTO -->            
+          <div class="col-md-4">
+            <!--<img src="img/stacy_bridges_1.jpg" class="welcome-pic img-responsive img-circle">-->
+
+            <!-- PHOTO CAROUSEL 
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/stacy_bridges_0.jpg" class="welcome-pic img-responsive img-circle">
+                </div>
+                <div class="item">
+                  <img src="img/stacy_bridges_1.jpg" class="welcome-pic img-responsive img-circle">
+                </div>        
+                <div class="item">
+                  <img src="img/stacy_bridges_2.jpg" class="welcome-pic img-responsive img-circle">
+                </div>    
+              </div>
+            </div>
+          -->
+            <img src="img/stacy_bridges.jpg" class="welcome-pic img-responsive img-circle">
+          </div> 
+
+          <!-- TEXT -->
+          <div class="col-md-8">
+            Hi, I'm
+            <span class="w_fat underline">&nbsp;Stacy Bridges&nbsp;!  </span>
+            <br/>
+            I'm a
+            <strong>technical communicator </strong>
+            <i class="fa fa-plus fa-plus-sign"></i>
+            <strong>developer </strong>
+            based in
+            <em>Round Rock, Texas</em>.
+            &nbsp;I love working with 
+            <strong>teams</strong>, 
+            <strong>technology</strong>, and the <strong>web</strong>.
+            &nbsp;Feel free to 
+            <a href="#contact" title="Go to the Contact Form"><strong>contact</strong></a> me with feedback, and <strong>thanks</strong> for visiting my site!
+          </div>
+        </div>
+
+        <div class="col-md-12 spacer30"></div>
+    
+      </div>
+    </div>
+    <div id="flip"> 
+      <!-- CAMERA TAB --> 
+      <div id="camera-tab" class="text-center">
+          <i class="fa fa-camera"></i>          
+      </div>
+    </div>
+
+
+<!-- BANNER //////////////////////////////////--> 
+    <section>
+      <div id="banner" class="anchor"></div>   
+      <div class="banner-wrapper container-fluid text-center jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="sb">Stacy Bridges</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>
+                technical communicator 
+                <i class="fa fa-plus fa-plus-sign"></i>
+                developer
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+ <!-- PORTFOLIO GALLERY //////////////////////////-->
+    <section>
+      <div id="portfolio" class="anchor"></div>      
+      <div class="wrapper portfolio-wrapper container-fluid">
+        <div class="container">
+          <div class="row">
+            <!-- SECTION-TITLE -->
+            <div class="section-title portfolio-title col-md-12">
+              <p>
+                <i class="fa fa-circle"></i>
+                &nbsp;&nbsp;Portfolio
+              </p>
+            </div>   
+          </div>       
+
+            <!-- SECTION-BODY -->
+          <div class="row">
+
+            <!-- FRET MACHINE -->
+            <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 p-panel p1-panel">
+              <a href="#p1-modal" class="modal-trigger">
+                <div class="p-pic p1">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">Fret Machine</p>
+                      <p><em>...a music blog</em></p>
+                      <span class="tech-tag">WordPress</span>
+                      <span class="tech-tag">JavaScript</span> 
+                    </div>
+                  </div>       
+                  <div class="p-heading center">
+                    <span class="p-title p1-title">
+                      <i class="fa fa-sliders"></i>
+                      &nbsp;Fret Machine
+                    </span>
+                  </div> 
+                </div>
+              </a>
+            </div>
+
+            <!-- CHINESE NOTEBOOK -->
+            <div class="col-md-6 col-md-offset-0 col-sm-6 col-xs-12 p-panel p2-panel">
+              <a href="#p2-modal" class="modal-trigger">
+                <div class="p-pic p2">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">Chinese Notebook</p>
+                      <p><em>...a language learning app</em></p>                      
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">jQuery</span>                      
+                      <span class="tech-tag">Bootstrap</span>
+                      <span class="tech-tag">AngularJS</span>
+                    </div>
+                  </div>         
+                  <div class="p-heading center">
+                    <span class="p-title p2-title"><strong>中文笔记本</strong></span>
+                  </div> 
+                </div>
+              </a>
+            </div>
+
+            <!-- MIPS OPS -->
+            <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 p-panel p3-panel">
+              <a href="#p3-modal" class="modal-trigger">
+                <div class="p-pic p3">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">MIPS Ops</p>
+                      <p><em>...a MIPS simulator</em></p>                        
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">CSS</span>  
+                    </div>
+                  </div>  
+                  <div class="p-heading center">
+                    <span class="p-title p3-title">
+                      MIPS 
+                      <i class="fa fa-cog"></i>
+                      Ops</span>
+                  </div> 
+                </div>
+              </a>
+            </div>
+
+            <!-- LOCAL TIDBITS -->
+            <div class="col-md-4 col-sm-6 col-xs-12 p-panel p4-panel">
+              <a href="#p4-modal" class="p-disabled">
+                <div class="p-pic p4">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">Local Tidbits</p>
+                      <p><em>...a weather forecasting app</em></p>                        
+                      <p><em>(COMING SOON)</em></p> 
+                    </div>
+                  </div>       
+                  <div class="p-heading center">
+                    <span class="p-title p4-title">Local Tidbits</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- JAZZ QUIZ -->
+            <div class="col-md-3 col-md-offset-0 col-sm-6 col-xs-12 p-panel p5-panel">
+              <a href="#p5-modal" class="modal-trigger">
+                <div class="p-pic p5">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">Jazz Quiz</p>
+                      <p><em>...a web-based jazz quiz</em></p>                        
+                      <span class="tech-tag">CSS</span>
+                      <span class="tech-tag">JSON</span>
+                      <span class="tech-tag">jQuery</span>                      
+                      <span class="tech-tag">AngularJS</span>  
+                    </div>
+                  </div>       
+                  <div class="p-heading center">
+                    <span class="p-title p5-title">
+                      jaZZ quiZZ
+                      <i class="fa fa-music"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>   
+
+            <!-- JSP FORM -->
+            <div class="col-md-6 col-md-offset-1 col-sm-6 col-xs-12 p-panel p6-panel">
+              <a href="#p6-modal" class="modal-trigger">
+                <div class="p-pic p6">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">JSP Form Demo</p>
+                      <p><em>...a JSP demo</em></p>                        
+                      <span class="tech-tag">JSP</span>
+                      <span class="tech-tag">PaaS</span>  
+                    </div>
+                  </div>       
+                  <div class="p-heading center">
+                    <span class="p-title p6-title">JSP Form Demo</span>
+                  </div> 
+                </div>
+              </a>
+            </div>
+
+            <!-- IPAD APP -->
+            <div class="col-md-4 col-sm-6 col-xs-12 p-panel p7-panel">
+              <a href="#p7-modal" class="p-disabled">
+                <div class="p-pic p7">
+                  <div class="p-hover center">
+                    <div>
+                      <p class="w_fat">iPad App</p>
+                      <p><em>(COMING SOON)</em></p> 
+                    </div>
+                  </div>       
+                  <div class="p-heading center">
+                    <span class="p-title p7-title">iPad App</span>
+                  </div>
+                </div>
+              </a>
+            </div>    
+
+          </div><!-- end row --> 
+        </div><!-- end container -->   
+        <div class="col-md-12 spacer50"></div>       
+      </div><!-- end wrapper -->
+    </section>
+
+
+<!-- PORTFOLIO MODALS ///////////////////////////-->
+    <!-- VIEW -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="p-modal">
+      <div class="modal-dialog modal-md" role="document">       
+        <div ng-view></div>
+      </div>
+    </div>
+
+
+<!-- ABOUT //////////////////////////////////////-->    
+    <section>
+      <div id="about" class="anchor"></div>   
+      <div class="about-wrapper container">
+        <div class="row">
+          <div class="col-md-12 spacer50"></div>  
+          <div class="section-title col-md-12">
+            <p>
+              <i class="fa fa-circle"></i>
+              &nbsp;&nbsp;About
+            </p>
+          </div>
+          <div class="col-md-4 about-photo-div">
+            <div class="text-center">
+              <img src="img/sbridges.jpg" class="img-responsive about-photo">
+            </div>
+          </div>
+          <div class="col-md-8 section-body text-muted">
+            <p>
+              I'm a <strong>technical communicator</strong> and <strong>developer</strong> in <em>Round Rock, Texas</em>, with a&nbsp;<a href="https://www.depts.ttu.edu/english/tcr/BATC/default.php" class="baLink" target="_blank" title="Visit the TTU BATC page">
+                <span class="ba-link"><strong>BA in Technical Communication</strong></span>
+              </a>
+              &nbsp;from
+              <abbr data-toggle="tooltip" data-placement="top" title="Texas Tech University"><strong>TTU</strong></abbr>
+              and seven years of experience in technical roles, including:
+            </p>
+            <br/>
+          </div>
+          <div class="section-body text-muted">
+            <ul class="col-md-3 col-md-offset-1 fa-ul"> 
+              <li><i class="fa-li fa fa-plus"></i> technical writing</li>
+              <li><i class="fa-li fa fa-plus"></i> data analysis</li>
+              <li><i class="fa-li fa fa-plus"></i> software testing</li>
+            </ul>
+            <ul class="col-md-3 fa-ul">
+              <li><i class="fa-li fa fa-plus"></i> projects</li>
+              <li><i class="fa-li fa fa-plus"></i> SQL reporting</li>
+              <li><i class="fa-li fa fa-plus"></i> production support</li>
+            </ul> 
+            <br/>
+          </div>
+        </div>
+        <div class="col-md-12 spacer50"></div>       
+        <div class="col-md-12 spacer30"></div>            
+      </div>   
+    </section>
+
+
+<!-- SKILLS /////////////////////////////////////-->
+    <section>
+      <div id="skills" class="anchor"></div>
+      <div class="skills-wrapper thumbnail">   
+        <div class="container">
+          <div class="row text-center">
+            <!-- HARD SKILLS -->
+            <div class="skills-div text-center hardSkills">
+              <a href="#hard-skills" class="left-menu-link skills-hot-zone">
+                <div>
+                  <i class="fa fa-arrow-circle-left skills-icon"></i>
+                  <br/>
+                  <span class="skills-label">Hard Skills</span>
+                </div>
+              </a>
+            </div>   
+            <!-- SOFT SKILLS -->
+            <div class="skills-div text-center softSkills">
+              <a href="#soft-skills" class="right-menu-link skills-hot-zone">
+                <div>
+                  <i class="fa fa-arrow-circle-right skills-icon"></i>
+                  <br/>
+                  <span class="skills-label">Soft Skills</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- LINKS //////////////////////////////////////-->   
+    <section class="links-wrapper">
+      <div class="container">
+        <div class="row text-center">
+          <!-- GITHUB -->
+          <div class="links-div text-center gitHub">
+            <a href="https://github.com/stcybrdgs" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-github links-icon"></i>
+                <br/>
+                <span class="links-label">Code</span>
+              </div>
+            </a>
+          </div>
+          <!-- LINKEDIN -->
+          <div class="links-div text-center linkedIn">
+            <a href="http://linkedin.com/in/stcybrdgs" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-linkedin links-icon"></i>
+                <br/>
+                <span class="links-label">Profile</span>
+              </div>
+            </a>
+          </div>
+          <!-- RESUME -->
+          <div class="links-div text-center resume">
+            <a href="docs/resume.pdf" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-file-o links-icon"></i>  
+                <br/>
+                <span class="links-label">Resume</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- SKILLS PANELS //////////////////////////////-->
+    <!-- HARD SKILLS PANEL -->
+    <div id="hard-skills" class="skills-panel left-panel center">
+      <div class="text-center">
+        <div class="panel-header">
+          <a href="#hard-skills" class="left-menu-link">
+            <i class="fa fa-times-circle skills-dismiss"></i> 
+          </a>
+          <br/><br/>
+          <span class="title">Hard <br/>Skills</span>
+        </div>
+        <div class="panel-body">
+          <ul class="fa-ul text-left">
+            <li><i class="fa-li fa fa-plus"></i> Tech Writing</li>      
+            <li><i class="fa-li fa fa-plus"></i> C++</li>       
+            <li><i class="fa-li fa fa-plus"></i> HTML</li>
+            <li><i class="fa-li fa fa-plus"></i> CSS</li>
+            <li><i class="fa-li fa fa-plus"></i> JavaScript</li>
+            <li><i class="fa-li fa fa-plus"></i> JSON / XML</li>
+            <li><i class="fa-li fa fa-plus"></i> jQuery</li>
+            <li><i class="fa-li fa fa-plus"></i> SQL</li>
+            <li><i class="fa-li fa fa-plus"></i> WordPress</li>
+            <li><i class="fa-li fa fa-plus"></i> Bootstrap</li>
+            <li><i class="fa-li fa fa-plus"></i> AngularJS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOFT SKILLS PANEL -->
+    <div id="soft-skills" class="skills-panel right-panel center">
+      <div class="text-center">
+        <div class="panel-header">
+          <a href="#soft-skills" class="right-menu-link">
+            <i class="fa fa-times-circle skills-dismiss"></i> 
+          </a>
+          <br/><br/>
+          <span class="title">Soft <br/>Skills</span>
+        </div>
+        <div class="panel-body">
+          <ul class="fa-ul text-left">
+            <li><i class="fa-li fa fa-plus"></i> Creativity</li>
+            <li><i class="fa-li fa fa-plus"></i> Enthusiasm</li> 
+            <li><i class="fa-li fa fa-plus"></i> Thoroughness</li> 
+            <li><i class="fa-li fa fa-plus"></i> Patience</li>            
+            <li><i class="fa-li fa fa-plus"></i> Persistence</li>            
+            <li><i class="fa-li fa fa-plus"></i> Dedication</li> 
+            <li><i class="fa-li fa fa-plus"></i> Decisiveness</li>
+            <li><i class="fa-li fa fa-plus"></i> Ownership</li>            
+            <li><i class="fa-li fa fa-plus"></i> Timeliness</li>
+            <li><i class="fa-li fa fa-plus"></i> Teamwork</li>
+            <li><i class="fa-li fa fa-plus"></i> Pizzazz</li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+<!-- CONTACT ////////////////////////////////////-->  
+    <section>  
+      <div id="contact" class="anchor"></div>   
+      <div class="wrapper contact-wrapper container-fluid">
+        <div class="container">
+          <div class="row">
+
+            <!-- SECTION-TITLE -->
+            <div class="section-title col-md-12">
+              <p>
+                <i class="fa fa-circle"></i>
+                &nbsp;&nbsp;Contact
+              </p>
+            </div>   
+            
+            <!-- CONTACT -->
+            <div id="contact"></div>     
+            <div class="container-fluid">
+              <div class="container">
+          
+                <!-- shim to clear top menu when auto scrolling-->
+                <div class="row shim"></div>
+
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1 contact-header">
+                    <p>
+                      Write to me with <strong>opportunities</strong> and <strong>feedback</strong>.&nbsp;&nbsp;I'd love to hear from you.  
+                      <br/><br/>
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <!-- CONTACT EMAIL FORM -->
+                  <div class="col-md-10 col-md-offset-1 text-center contact-email-form">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                      <div class="form-group">
+                        <input type="text" class="form-control name" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control email" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control text-area" placeholder="Message *" id="message" required data-validation-required-message="Please enter a message." rows="5"></textarea>
+                      </div>
+                      <div class="buttonDiv text-center">
+                        <button id="sendBtn" type="submit" class="btn btn-xl form-control"><strong>Send</strong></button>
+                      </div>
+                    </form>
+                    <br/><br/><br/>
+                  </div><!-- end contact-email-form --> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end .contact-wrapper -->    
+    </section>
+
+
+<!-- FOOTER /////////////////////////////////////-->
+    <section>
+      <div id="footer" class="anchor"></div>    
+      <div class="wrapper footer-wrapper"> 
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Button to trigger SPECIAL THANKS modal -->
+            <button type="button" class="btn btn-link thanks" data-toggle="modal" data-target="#thanks" style="padding:0px;">
+              Credits & Thanks
+            </button>
+              <br/>         
+              &copy; 2015, Stacy Bridges
+              <br/>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+
+<!-- THANKS MODAL /////////////////////////////////////-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="thanks">
+      <div class="modal-dialog modal-md" role="document"> 
+        <div class="modal-content">
+          <div class="modal-header text-center ">
+            <span class="x-dismiss" data-dismiss="modal">x</span>
+            <span class="title">Credits & Thanks</span> 
+          </div>
+          <div class="text-center text-muted">
+            <div class="modal-footer">
+              <div class="text-left modal-media-info">
+                <b>Thanks</b> to the following folks whose tools and scripts helped to make this site possible:<br/>
+              </div>
+              <div class="list-div" style="border:0px;">
+                  <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-plus"></i><a href="http://ascott1.github.io/bigSlide.js/" target="_blank"><strong> Adam D. Scott</strong></a> for his excellent <em>Big Slide</em> jQuery scripts</li>
+                    <li><i class="fa-li fa fa-plus"></i><a href="http://untame.net/2013/05/how-to-build-a-modal-contact-form-in-twitter-bootstrap-with-php-ajax/" target="_blank"><strong> Michael Milstead</strong></a> for his article on modal contact forms</li>
+                    <li><i class="fa-li fa fa-plus"></i><a href="https://cssminifier.com/" target="_blank"><strong> CSS Minifier</strong></a> for their online CSS minifier/compressor tool</li>
+                    <li><i class="fa-li fa fa-plus"></i><a href="https://www.google.com/fonts" target="_blank"><strong> Google Fonts</strong></a> for their web font API</li>      
+                    <li><i class="fa-li fa fa-plus"></i><a href="https://www.bootstrapcdn.com" target="_blank"><strong> BootstrapCDN</strong></a> for their convenient Bootstrap and Font Awesome delivery network</li>    
+                    <li><i class="fa-li fa fa-plus"></i><a href="http://www.fontspace.com/jessica-darnell-fonts/groovy-baby" target="_blank"><strong> Jessica Darnell</strong></a> for her <em>Groovy Baby font</em></li>
+                    <li><i class="fa-li fa fa-plus"></i><a href="http://www.1001freefonts.com/angel_toes.font" target="_blank"><strong> Vanessa Bays</strong></a> for her <em>Angel Toes font</em></li>
+                    <li><i class="fa-li fa fa-plus"></i><a href="http://www.1001freefonts.com/fat_marker.font" target="_blank"><strong> Vanessa Bays</strong></a> (again!) for her <em>Fat Marker font</em></li>                   
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer-background"></div>          
+        </div>
+      </div>
+    </div><!-- end thanks modal -->
+  </div><!-- end #mainWrapper -->
+</div><!-- end .wrap -->
+
+
+<!-- JS & jQuery scripts /////////////////////////////-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//code.angularjs.org/1.4.0-rc.1/angular.min.js"></script>
+<script src="//code.angularjs.org/1.4.0-rc.1/angular-route.min.js"></script>
+<script src="js/portfolioApp.js"></script> 
+<script src="js/my-jQuery.js"></script>
+<!-- left & right sliding panels -->
+<script src="js/jquery.big-slide-hard-skills.js"></script>
+<script src="js/jquery.big-slide-soft-skills.js"></script>
+
+
+</body>
+</html>

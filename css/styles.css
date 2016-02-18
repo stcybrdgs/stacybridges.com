@@ -1,0 +1,737 @@
+/*
+===================================================
+  CSS Scripts for Online Portfolio 
+  2016, Stacy Bridges
+===================================================
+*/
+
+
+/*************************************************************
+* TRUE TYPE FONTS
+*************************************************************/
+@font-face { font-family: fatMarker; src: url(../ttf/fatMarker.ttf); }
+@font-face { font-family: angelToes; src: url(../ttf/angelToes.ttf); }
+@font-face { font-family: groovyBaby; src: url(../ttf/groovyBaby.ttf); }
+
+
+/*************************************************************
+* MEDIA QUERIES
+*************************************************************/
+@media screen and (max-width: 380px) { 
+    .stacyBridges { display: visible; } 
+}
+@media screen and (max-width: 379px) { 
+    .stacyBridges { display: none; } 
+}
+@media screen and (min-width: 768px) { 
+    #panel { font-size: 2em; } 
+    .welcome-content{ line-height: 55px; }
+    .about-wrapper { font-size: 1em; }
+    .underline{ border-bottom: 3px solid rgb(80,140,190); }
+}
+@media screen and (max-width: 767px) { 
+    #panel {font-size: 1.8em; } 
+    .welcome-content{line-height: 50px; }    
+    .about-wrapper {font-size: .8em; }    
+    .underline{border-bottom: 3px solid rgb(80,140,190); }    
+}
+@media screen and (max-width: 600px) { 
+    #panel { font-size: 1.6em; } 
+    .welcome-content{ line-height: 45px; }    
+    .about-wrapper { font-size: .8em; }   
+    .underline{ border-bottom: 2px solid rgb(80,140,190); }
+}
+@media screen and (max-width: 320px) { 
+    #panel { font-size: 1.4em; } 
+    .welcome-content{ line-height: 40px; }    
+    .about-wrapper { font-size: .7em; } 
+    .underline{ border-bottom: 1px solid rgb(80,140,190); }
+}
+
+
+/*************************************************************
+* BODY / MAIN-WRAPPER / GENERAL
+*************************************************************/
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    font-family: Source Sans Pro, Arial, sans-serif; 
+}
+body{
+    overflow-y: scroll;
+}
+#main-wrapper { 
+    min-height: 100%; 
+    position: relative; 
+    padding-top: 0px; 
+}
+.wrap { 
+    position: relative; 
+}
+.center { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.section-title p { 
+    font-family: fatMarker; 
+    font-size: 2em; 
+    font-weight: bold; 
+    margin-bottom: 40px; 
+}
+.section-body p, 
+.section-body ul { 
+    font-size: 2em; 
+    text-align: left; 
+    margin-bottom: 0px;
+}
+.section-body ul { 
+    list-style: none; 
+}
+.wrapper { 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+.anchor { 
+    position:relative;
+    top:-50px; 
+}
+.list-title{
+    font-family: fatMarker; 
+    font-size: 2em; 
+    font-weight: bold;     
+}
+.fa-circle {
+    color: rgb(80,140,190);
+}
+
+
+/*************************************************************
+* MENU
+*************************************************************/
+.navbar {
+    height: 50px;
+}
+.navbar a { 
+    position: relative; 
+    font-family: fatMarker; 
+    font-size: 1.2em; 
+}
+.navbar-nav {
+    margin-top: 0px;
+}
+.navbar-nav li{
+    background-color: rgb(64,64,64);
+}
+.stacyBridges { 
+    position:relative; 
+    top: -10px; 
+    font-size: 1.2em; 
+}
+.brand { 
+    color: white; 
+    background-color: rgb(80,140,190);
+    font-family: fatMarker;
+    padding: 8px 8px 6px 8px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 2em;
+    position: relative;
+    top: -8px;
+}
+
+
+/******************************************
+* SLIDE-DOWN WELCOME PANEL
+*******************************************/
+#panel { 
+    text-align: center; 
+    background-color: rgb(62,62,62); 
+    padding-top: 30px; 
+    padding-bottom: 30px;     
+    display: none;  
+}
+#flip { 
+    background-color: white; 
+}
+.spacer30 { 
+    height: 30px; 
+}    
+.spacer50 { 
+    height: 50px; 
+}
+.welcome-content a, 
+.welcome-content a:hover { 
+    text-decoration: none; 
+}
+.welcome-content { 
+    font-size: 1em;
+    border-radius: 0px;   
+    background-color: rgb(240,240,240);
+    color: rgb(62,62,62);
+}
+.welcome-pic { 
+    width: 300px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+.w_fat, .w_tc{
+    font-size: 1.1em;    
+}
+.w_fat { 
+    font-family: fatMarker; 
+}
+#camera-tab {
+    font-size: 1.9em;
+    padding: 6px 6px 4px 6px;
+    background-color: rgb(62,62,62);
+    width: 60px;
+    margin: 0 auto;
+    color:white;     
+    border-bottom-right-radius:15px;  
+    border-bottom-left-radius:15px;  
+    -webkit-transition: color .1s ease-in-out;
+    -mozilla-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;                        
+    transition: color .1s ease-in-out;  
+}
+#camera-tab:hover { 
+    color: rgb(80,140,190); 
+    cursor: pointer; 
+}
+.welcome-dismiss { 
+    color: rgb(140,140,140); 
+    font-size: 2em; 
+    margin-top: 8px;
+    margin-right: 15%;
+    -webkit-transition: color .1s ease-in-out;
+    -mozilla-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;                        
+    transition: color .1s ease-in-out;
+}
+.welcome-dismiss:hover { 
+    color: rgb(62,62,62);
+    cursor: pointer; 
+}
+
+
+/*************************************************************
+* BANNER
+*************************************************************/
+.jumbotron { 
+    margin: 0px; 
+}
+.banner-wrapper { 
+    background-color: white; 
+    padding-top: 20px; 
+    padding-bottom: 60px; 
+    color: rgb(62,62,62);
+}
+.sb { 
+    font-family: fatMarker; 
+}
+.underline{ 
+    padding-bottom: 2px; 
+}
+.fa-plus-sign { 
+    color:white;
+    background-color: rgb(80,140,190);
+    border-radius: 50px;
+    padding: 4px 6px 2px 6px; 
+    font-size: .8em;
+}
+
+
+/*************************************************************
+* PORTFOLIO
+*************************************************************/
+.portfolio-wrapper{ 
+    background-color: rgb(62,62,62); 
+}
+.portfolio-title { 
+    color: rgb(238,238,238); 
+}
+.p-panel { 
+    height: 250px; 
+    border: 10px solid rgb(62,62,62);
+    padding: 0px; 
+    font-size: 1.6em; 
+    color: white; 
+}
+.p-pic{ 
+    height: 100%; 
+    opacity: 1; 
+    color: white;
+    font-size: 1.4em;
+}
+.p-panel a:hover{ 
+    text-decoration:none; 
+}
+
+ /* PORTFOLIO IMAGES */ 
+.p1 { background: url('../img/fretMachine2.jpg'); background-size: cover; } 
+.p2 { background: url('../img/portfolio_2_bw.jpg'); background-size: cover; } 
+.p3 { background: url('../img/mipsOps.jpg'); background-size: cover; }
+.p4 { background: url('../img/portfolio_4_bw.jpg'); background-size: cover; }
+.p5 { background: url('../img/portfolio_5_bw.jpg'); background-size: cover; }
+.p6 { background: url('../img/jspFormDemo.jpg'); background-size: cover; } 
+.p7 { background: url('../img/portfolio_7_bw.jpg'); background-size: cover; }
+.p-disabled:hover{
+    cursor:not-allowed;
+}
+.p-heading, .p-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity .2s ease-in-out;
+    -mozilla-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;            
+    transition: opacity .2s ease-in-out;    
+}
+.p-heading {
+    box-shadow: 0px 2px 12px rgb(80,140,190);
+    font-size: 1em;
+    opacity: 1;
+}
+.p-hover{
+    background-color: rgb(64,64,64);
+    font-size: .7em;
+    opacity: 0;
+}
+.p-title{
+    width:100%;
+    padding:0px;
+    background-color: rgb(34,34,34);    
+    box-shadow: 0px 2px 12px rgb(80,140,190); 
+}
+.p1-title { 
+    font-family: angelToes; 
+    color: rgb(250,90,60); 
+}
+.p2-title { 
+    color: rgb(223,240,216); 
+}
+.p3-title { 
+    font-family: Courier;
+    color: rgb(190,26,26);
+    text-shadow: 1px 1px white;
+}
+.p4-title{ font-family: Indie Flower;}
+.p5-title { 
+    font-family: groovyBaby; 
+    color: rgb(190,220,250);
+}
+.p6-title { 
+    color: rgb(255,255,204);
+}
+
+.p1 .p-heading.transparent,
+.p2 .p-heading.transparent,
+.p3 .p-heading.transparent,
+.p4 .p-heading.transparent,
+.p5 .p-heading.transparent,
+.p6 .p-heading.transparent,
+.p7 .p-heading.transparent { 
+    opacity: 0.05; 
+}
+.p1 .p-hover.showInfo,
+.p2 .p-hover.showInfo,
+.p3 .p-hover.showInfo,
+.p4 .p-hover.showInfo,
+.p5 .p-hover.showInfo,
+.p6 .p-hover.showInfo,
+.p7 .p-hover.showInfo { 
+    opacity: 0.85; 
+}
+.p-disabled{ cursor:not-allowed; }
+
+
+/************************************************************
+* MODALS
+*************************************************************/
+.modal-content { 
+    background-color: white;
+    color: rgb(34,34,34); 
+    font-size: 1.8em; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.modal-header { 
+    font-weight: bold;
+    background-color: white;
+    color: rgb(34,34,34);
+    padding: 0px;
+}
+.modal-header .title{
+    font-family: fatMarker;
+    display: block;
+    background-color: rgb(62,62,62);
+    color: white;
+    margin: 0px;
+    padding-bottom: 21px;
+    padding-top: 35px;
+}
+.modal-footer { 
+    text-align: left;
+    font-family: Source Sans Pro, Arial, sans-serif; 
+    font-size: .75em; 
+    display: inline-block; 
+}
+.modal-footer ul { 
+    position:relative; 
+    left: -20px; 
+}
+.modal-footer .list-div .fa-li { 
+    padding-top: 6px;
+}
+.modal-footer .fa-plus{ 
+    color: rgb(80,140,190); 
+    font-size: .6em; 
+}
+.modal-footer-background{ 
+    height: 36px; 
+    background-color: rgb(62,62,62);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;     
+}
+.modal-media-info { 
+    padding-bottom: 10px; 
+}
+.modal-media-icon { 
+    font-size: 3em; 
+    color: rgb(140,140,140); 
+    padding: 4px; 
+}
+.list-div{
+    border-top: 1px solid rgb(140,140,140);
+    padding-top: 8px;
+    padding-bottom: 12px;
+    margin-top: 8px;
+} 
+.tech-tag-div { 
+    padding-top: 8px; 
+    padding-bottom: 12px; 
+}
+.tech-tag { 
+    background-color: rgb(80,140,190); 
+    color: white; 
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
+    font-size: .8em;
+}   
+.modal-link { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    font-size: .8em; 
+    border: 1px outset rgb(200,200,200);
+}
+.x-dismiss{
+    font-family: fatMarker; font-size: 1.3em; font-weight: bold;
+    padding: 2px 16px 0px 16px;
+    border-radius: 50px;
+    background-color: rgb(220,220,220);
+    border-color: rgb(220,220,220);
+    color: rgb(62,62,62);   
+    position: absolute; margin-top: 10px; top: -35px;
+    right: 15%;
+    -webkit-transition: all .1s ease-in-out;
+    -mozilla-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;      
+    transition: all .1s ease-in-out;
+}
+.x-dismiss:hover{ 
+    cursor:pointer; 
+    color: white;
+    background-color: rgb(140,140,140);
+    border-color: rgb(140,140,140);
+}
+
+
+/*************************************************************
+* MODAL ABSTRACTS
+*************************************************************/
+.panel-heading {
+  padding: 8px 15px;
+  border-bottom: 1px solid transparent;
+}
+.abstract-dismiss{
+   color: rgb(140,140,140);
+    -webkit-transition: all .1s ease-in-out;
+    -mozilla-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;      
+    transition: all .1s ease-in-out;    
+}
+.abstract-dismiss:hover{
+    text-decoration: none;
+    color: rgb(82,82,82);
+ }
+.abstract-body{
+    background-color: rgb(240,240,240);
+}
+.abstract-icon{ margin-right: 8px; }
+.abstract-link{ font-size: 2em; }
+.abstract-title{
+    font-weight: bold;
+    font-size: .35em;
+}
+.abstract-text{
+    font-size: .5em;
+}
+.abstract-link{
+    color: rgb(160,160,160);
+}
+.abstract-link:hover{
+    color: rgb(62,62,62);    
+    text-decoration: none;
+    cursor: pointer;
+}
+.abstract-chevron{
+    display:block;
+    text-align:center;
+}
+
+/*************************************************************
+* SKILLS
+*************************************************************/
+.skills-wrapper { 
+    font-size: 2em;
+    margin: 0px;
+    background-color: rgb(240,240,240);
+    font-family: fatMarker;  
+}
+.skills-div{ 
+    margin: 15px; 
+    display: inline-block; 
+}    
+.skills-icon { 
+    font-size: 2.4em; 
+    -webkit-transition: color .2s ease-in-out;
+    -mozilla-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;            
+    transition: color .2s ease-in-out;
+}
+.skills-hot-zone { 
+    color: rgb(140,140,140); 
+}
+.skills-hot-zone:hover { 
+    color: rgb(82,82,82); 
+    cursor: pointer; 
+    text-decoration: none;
+}
+.skills-label { 
+    font-size: .9em; 
+    border-bottom:4px solid transparent;
+    padding-bottom:8px; 
+    -webkit-transition: border-bottom .2s ease-in-out;
+    -mozilla-transition: border-bottom .2s ease-in-out;
+    -o-transition: border-bottom .2s ease-in-out;            
+    transition: border-bottom .2s ease-in-out;
+}
+.hardSkills .skills-label.u,
+.softSkills .skills-label.u {
+    border-bottom-color: rgb(82,82,82);
+}
+.right-panel, .left-panel {
+    position: fixed;
+    width: 15.625em; /*should match the above value*/
+    background-color: white;
+    z-index: 4;
+}
+.skills-dismiss { 
+    color: rgb(140,140,140); 
+    font-size: 4em;
+    padding-bottom: 20px;
+    display: inline;
+    margin: 0 auto;
+    -webkit-transition: color .1s ease-in-out;
+    -mozilla-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;                        
+    transition: color .1s ease-in-out;
+}
+.skills-dismiss:hover { 
+    color: rgb(62,62,62);
+    cursor: pointer; 
+}
+.skills-panel div { 
+    width: 100%; 
+}
+.skills-wrapper a,
+.skills-wrapper a:hover, 
+.panel-header a:hover {
+    text-decoration: none;
+}
+.panel-header .title{
+    font-family: fatMarker;
+    font-size: 2em;
+    display: block;
+    background-color: rgb(62,62,62);
+    color: rgb(240,240,240);
+    margin: 0px;
+    padding-bottom: 14px;
+    padding-top: 18px;
+    font-weight: bold;
+}
+.panel-body {
+    font-size: 1.6em;
+    margin-top: 8px;
+}
+.panel-body li i {
+    font-size: .6em;
+    color: rgb(80,140,190);
+    padding-top: 9px;
+}
+
+
+/*************************************************************
+* ABOUT
+*************************************************************/
+.about-wrapper{ 
+    background-color: white; 
+}
+.about-wrapper a, .about-wrapper a:hover {
+    text-decoration: none;
+    color: rgb(80,140,190);
+}
+.about-photo { 
+    width: 600px; 
+    margin: 0 auto; 
+}
+.about-wrapper .section-title{ 
+    color: rgb(62,62,62); 
+}
+.about-photo-div {
+    margin-bottom: 20px;
+}
+.about-wrapper .section-title .fa-plus { 
+    color: white; 
+}
+.about-wrapper .section-body .fa-plus { 
+    color: rgb(80,140,190); 
+    font-size: .6em; 
+    margin-top: 9px;
+}
+
+
+/*************************************************************
+* LINKS
+*************************************************************/
+.links-wrapper{ 
+    font-family: fatMarker;
+    background-color: rgb(62,62,62); 
+    font-size: 2em; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.links-wrapper a { 
+    display: block; 
+    text-decoration: none; 
+}
+.links-wrapper a:hover { 
+    text-decoration: none; 
+}
+.links-div{ 
+    margin: 15px; 
+    display: inline-block; 
+}    
+.links-icon { 
+    font-size: 2.4em; 
+    -webkit-transition: color .2s ease-in-out;
+    -mozilla-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;            
+    transition: color .2s ease-in-out;
+}
+.links-hot-zone { 
+    color: rgb(140,140,140); 
+}
+.links-hot-zone:hover { 
+    color: rgb(80,140,190); 
+    cursor: pointer; 
+    text-decoration: none;
+}
+.links-label { 
+    font-size: .9em; 
+    border-bottom:4px solid transparent;
+    padding-bottom:8px; 
+    -webkit-transition: border-bottom .2s ease-in-out;
+    -mozilla-transition: border-bottom .2s ease-in-out;
+    -o-transition: border-bottom .2s ease-in-out;            
+    transition: border-bottom .2s ease-in-out;
+}
+.gitHub .links-label.u,
+.linkedIn .links-label.u, 
+.resume .links-label.u,
+.hardSkills .links-label.u,
+.softSkills .links-label.u {
+    border-bottom-color: rgb(80,140,190);
+}
+
+
+/*************************************************************
+* CONTACT
+*************************************************************/
+.contact-wrapper{
+    background-color: rgb(80,140,190);
+    color: white;
+    padding-bottom: 40px;
+}
+.contact-wrapper .fa-circle {
+    color: rgb(240,240,240);
+}
+.contact-header p{
+    position: relative;
+    line-height: 35px;
+    text-align: left;    
+    font-size: 2em;
+}
+form .form-control{
+    background-color: transparent;
+    border: 4px solid rgb(220,220,220);
+    border-radius: 0; 
+    font-size: 1.8em;
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+form .name, form .email{
+    height: 40px;
+}
+form .text-area, form .email, form .name{
+    background-color: white;
+}
+#sendBtn{
+    font-family: fatMarker;
+    font-size: 1.2em;
+    color: rgb(80,140,190);
+    background-color: white;
+    border: 4px solid rgb(220,220,220);  
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;    
+    height: 80px;
+    width: 80px; 
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+#sendBtn:hover{
+    color: white;
+    background-color: rgb(80,140,190);
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 8px rgba(0,0,0,.075), 0 0 8px rgba(240,170,122,.6);
+            box-shadow: inset 0 2px 8px rgba(0,0,0,.075), 0 0 8px rgba(240,170,122,.6);  
+}
+
+
+/*************************************************************
+* FOOTER
+*************************************************************/
+.footer-wrapper{
+    font-size: 1.4em;
+    background-color: white;
+    color: rgb(140,140,140); 
+    text-align:center;
+}
+.thanks{ font-size:1em; }
+#thanks li{ padding-bottom: 10px; }
