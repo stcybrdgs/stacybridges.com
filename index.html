@@ -1,17 +1,24 @@
+<!--
+===================================================
+  HTML for Online Portfolio
+  2016, Stacy Bridges
+===================================================
+-->
+
 <!doctype html>
 <html ng-app="myPortfolio">
 <head>
 
   <!-- META DATA -->
   <meta charset="utf-8">
-  <title>Stacy Bridges | Developer Portfolio</title>
+  <title>Stacy Bridges | Programmer Portfolio</title>
 
   <!-- SEO -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="c++, html, css, javascript, json, jquery, bootstrap, angular, technical, communication, web, developer, portfolio">
-  <meta name="description" content="I’m a technical communicator and developer who loves working with teams, technology, and the web. . . welcome to my online portfolio!">
-  <meta property="og:title" content="Stacy Bridges | Developer Portfolio" />
-  <meta property="og:description" content="I’m a technical communicator and developer who loves working with teams, technology, and the web. . . welcome to my online portfolio!" />
+  <meta name="keywords" content="stacy, bridges, c++, html, css, javascript, json, jquery, bootstrap, angular, technical, communication, web, programmer, portfolio">
+  <meta name="description" content="I’m a technical communicator and programmer who loves working with teams, technology, and the web. . . welcome to my online portfolio!">
+  <meta property="og:title" content="Stacy Bridges | Programmer Portfolio" />
+  <meta property="og:description" content="I’m a technical communicator and programmer who loves working with teams, technology, and the web. . . welcome to my online portfolio!" />
   <meta property="og:image" content="http://www.stacybridges.com/img/stacy_bridges.jpg" />
 
   <!-- LINKS -->
@@ -109,7 +116,7 @@
             I'm a
             <strong>technical communicator </strong>
             <i class="fa fa-plus fa-plus-sign"></i>
-            <strong>developer </strong>
+            <strong>programmer </strong>
             based in
             <em>Round Rock, Texas</em>.
             &nbsp;I love working with 
@@ -152,7 +159,7 @@
               <h2>
                 technical communicator 
                 <i class="fa fa-plus fa-plus-sign"></i>
-                developer
+                programmer
               </h2>
             </div>
           </div>
@@ -357,7 +364,7 @@
           </div>
           <div class="col-md-8 section-body text-muted">
             <p>
-              I'm a <strong>technical communicator</strong> and <strong>developer</strong> in <em>Round Rock, Texas</em>, with a&nbsp;<a href="https://www.depts.ttu.edu/english/tcr/BATC/default.php" class="baLink" target="_blank" title="Visit the TTU BATC page">
+              I'm a <strong>technical communicator</strong> and <strong>programmer</strong> in <em>Round Rock, Texas</em>, with a&nbsp;<a href="https://www.depts.ttu.edu/english/tcr/BATC/default.php" class="baLink" target="_blank" title="Visit the TTU BATC page">
                 <span class="ba-link"><strong>BA in Technical Communication</strong></span>
               </a>
               &nbsp;from
@@ -412,45 +419,6 @@
                 </div>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-<!-- LINKS //////////////////////////////////////-->   
-    <section class="links-wrapper">
-      <div class="container">
-        <div class="row text-center">
-          <!-- GITHUB -->
-          <div class="links-div text-center gitHub">
-            <a href="https://github.com/stcybrdgs" target="_blank" class="links-hot-zone">
-              <div>
-                <i class="fa fa-github links-icon"></i>
-                <br/>
-                <span class="links-label">Code</span>
-              </div>
-            </a>
-          </div>
-          <!-- LINKEDIN -->
-          <div class="links-div text-center linkedIn">
-            <a href="http://linkedin.com/in/stcybrdgs" target="_blank" class="links-hot-zone">
-              <div>
-                <i class="fa fa-linkedin links-icon"></i>
-                <br/>
-                <span class="links-label">Profile</span>
-              </div>
-            </a>
-          </div>
-          <!-- RESUME -->
-          <div class="links-div text-center resume">
-            <a href="docs/resume.pdf" target="_blank" class="links-hot-zone">
-              <div>
-                <i class="fa fa-file-o links-icon"></i>  
-                <br/>
-                <span class="links-label">Resume</span>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -515,6 +483,45 @@
     </div>
 
 
+<!-- LINKS //////////////////////////////////////-->   
+    <section class="links-wrapper">
+      <div class="container">
+        <div class="row text-center">
+          <!-- GITHUB -->
+          <div class="links-div text-center gitHub">
+            <a href="https://github.com/stcybrdgs" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-github links-icon"></i>
+                <br/>
+                <span class="links-label">Code</span>
+              </div>
+            </a>
+          </div>
+          <!-- LINKEDIN -->
+          <div class="links-div text-center linkedIn">
+            <a href="http://linkedin.com/in/stcybrdgs" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-linkedin links-icon"></i>
+                <br/>
+                <span class="links-label">Profile</span>
+              </div>
+            </a>
+          </div>
+          <!-- RESUME -->
+          <div class="links-div text-center resume">
+            <a href="docs/resume.pdf" target="_blank" class="links-hot-zone">
+              <div>
+                <i class="fa fa-file-o links-icon"></i>  
+                <br/>
+                <span class="links-label">Resume</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 <!-- CONTACT ////////////////////////////////////-->  
     <section>  
       <div id="contact" class="anchor"></div>   
@@ -550,18 +557,25 @@
                 <div class="row">
                   <!-- CONTACT EMAIL FORM -->
                   <div class="col-md-10 col-md-offset-1 text-center contact-email-form">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form id="form" class="contact" name="contact">
                       <div class="form-group">
-                        <input type="text" class="form-control name" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                        <input type="text" class="form-control name" placeholder="Name *" id="name" name="name">
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control email" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control email" placeholder="Email *" id="email" name="email">
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control text-area" placeholder="Message *" id="message" required data-validation-required-message="Please enter a message." rows="5"></textarea>
+                        <textarea class="form-control text-area" placeholder="Message *" id="message"  name="message" rows="5"></textarea>
                       </div>
                       <div class="buttonDiv text-center">
                         <button id="sendBtn" type="submit" class="btn btn-xl form-control"><strong>Send</strong></button>
+                        <div class="alert alert-success" id="confirmation-section">
+                          Thank you! Your message was sent
+                          <br/>
+                          <button type="button" class="btn btn-link" id="confirmation-dismiss">
+                            <i class="fa fa-times-circle"></i>
+                          </button>
+                        </div>                        
                       </div>
                     </form>
                     <br/><br/><br/>
@@ -628,7 +642,6 @@
   </div><!-- end #mainWrapper -->
 </div><!-- end .wrap -->
 
-
 <!-- JS & jQuery scripts /////////////////////////////-->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -639,6 +652,41 @@
 <!-- left & right sliding panels -->
 <script src="js/jquery.big-slide-hard-skills.js"></script>
 <script src="js/jquery.big-slide-soft-skills.js"></script>
+
+<!-- INCORPORATE JQUERY/AJAX FOR THE CONTACT FORM -->
+<script>
+  $(document).ready(function(){
+    $("#sendBtn").click(function(){
+      $.ajax({
+        type: "POST",
+        url: "mail/contact.php", //process to mail
+        data: $('form.contact').serialize(),
+        success: function(data){
+          // clear the contact form fields
+          $('#form')[0].reset();
+          $('#sendBtn').hide();
+          $('#confirmation-section').show();        
+  
+          // swap contactForm content for confirmation content
+          /*
+          $('#confirmation-section').html(data);                  
+          $("#contactForm-title").hide();
+          $('#confirmation-title').show(); 
+          $("#contactForm-body").hide();
+          $('#confirmation-body').show();
+          $('#confirmation-body').html(data);
+          $('#contactForm-submit').hide(); 
+          $('#confirmation-submit').show();
+          */
+        },
+        error: function(){
+          alert("failure");
+        }
+      });
+    });
+  });
+</script> 
+
 
 
 </body>
