@@ -12,7 +12,7 @@
 @font-face { font-family: fatMarker; src: url(../ttf/fatMarker.ttf); }
 @font-face { font-family: angelToes; src: url(../ttf/angelToes.ttf); }
 @font-face { font-family: groovyBaby; src: url(../ttf/groovyBaby.ttf); }
-
+@font-face { font-family: charmonman; src: url('https://fonts.googleapis.com/css?family=Charmonman') };
 
 /*************************************************************
 * MEDIA QUERIES
@@ -56,6 +56,7 @@ html, body {
     margin: 0; 
     padding: 0; 
     height: 100%; 
+    /* rem update fonts for mediq queries on next iteration */
     font-family: Source Sans Pro, Arial, sans-serif; 
 }
 body{
@@ -351,6 +352,13 @@ body{
 /************************************************************
 * MODALS
 *************************************************************/
+.modal-newInclusion {
+    background-color: white;
+    color: rgb(34,34,34); 
+    font-size: 1.8em; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 .modal-content { 
     background-color: white;
     color: rgb(34,34,34); 
